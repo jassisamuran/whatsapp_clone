@@ -4,7 +4,8 @@ import { useContext } from 'react';
 import { qrCodeImage } from '../constants/data';
 import {GoogleLogin} from '@react-oauth/google';
 import { AccountContext } from '../../context/AccountProvider';
-import jwt_decode from 'jwt-decode'
+// import jwt_decode from 'jwt-decode'
+import {jwtDecode as jwt_decode} from 'jwt-decode';
 import { addUser } from '../../service/api';
 const Component=styled(Box)`
     display:flex,
